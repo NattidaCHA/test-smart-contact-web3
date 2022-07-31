@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ethers } from 'ethers';
 import Swal from 'sweetalert2';
-// import SimpleStorage from '../../../../smartcontact/build/contracts/SimpleStorage.json';
+import SimpleStorage from '../../../../smart_contact/build/contracts/SimpleStorage.json';
 
 @Component({
   selector: 'app-smartcontact',
@@ -35,7 +35,7 @@ export class SmartcontactComponent implements OnInit {
       this.balance = ethers.utils.formatEther(currentBalance).toString();
       const _chainId = await provider.getNetwork()
       this.chainId = _chainId.chainId.toString();
-      // const contract = new ethers.Contract(address,SimpleStorage.abi,signer);
+      const contract = new ethers.Contract(address,SimpleStorage.abi,signer);
       // console.log(contract)
     }
   };
