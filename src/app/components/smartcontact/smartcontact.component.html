@@ -1,1 +1,47 @@
-<p>smartcontact works!</p>
+<main class="content-main">
+    <div class="container">
+      <div class="row box mb-5">
+        <div class="col-md-8">
+          <div class="card">
+            <h5 class="card-header">Account : {{this.account}}</h5>
+            <div class="card-body">
+              <p class="card-text">Balance : {{this.balance}}</p>
+              <p class="card-text">Chain ID : {{this.chainId}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row box mb-3">
+        <div class="col-md-8">
+          <h5 class="text-center">Send BUSD</h5>
+        </div>
+      </div>
+  
+  
+      <div class="row box mb-2">
+        <div class="col-md-8">
+          <div class="mb-3 row">
+            <label for="sent_to" class="col-sm-2 col-form-label">Sent to</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="sent_to" name="sent_to" autocomplete="off" placeholder="Sent to"
+                [(ngModel)]="to">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="busd" class="col-sm-2 col-form-label">BUSD</label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control" id="busd" name="busd" placeholder="BUSD" [(ngModel)]="value">
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row box text-end">
+        <div class="col-md-8">
+          <button type="button" class="btn btn-primary mb-1" (click)="connect()">Submit</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  
