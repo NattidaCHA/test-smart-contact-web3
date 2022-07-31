@@ -30,7 +30,7 @@
     },
     {
       "inputs": [],
-      "name": "reeadData",
+      "name": "readData",
       "outputs": [
         {
           "internalType": "uint256",
@@ -43,9 +43,9 @@
       "constant": true
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.3+commit.8d00100c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"data\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"reeadData\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_data\",\"type\":\"uint256\"}],\"name\":\"updateData\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/SimpleStorage.sol\":\"SimpleStorage\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/SimpleStorage.sol\":{\"keccak256\":\"0x8f23a5f6fe36bb5e38c92e210391339c8d4d1f929bc5708ab36c0b3904be55e5\",\"urls\":[\"bzz-raw://dea8e5adac269da697e15038c93c5af7a419d0cfcb0b76f3e9b2d18036b3beeb\",\"dweb:/ipfs/QmUnmodcvwLUWPbArz9gefZny58jCUqPggHHoqVA9MUpC3\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b50610176806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c806309e960081461004657806373d4a13a146100625780638ed7cd9a14610080575b600080fd5b610060600480360381019061005b91906100cc565b61009e565b005b61006a6100a8565b6040516100779190610104565b60405180910390f35b6100886100ae565b6040516100959190610104565b60405180910390f35b8060008190555050565b60005481565b60008054905090565b6000813590506100c681610129565b92915050565b6000602082840312156100de57600080fd5b60006100ec848285016100b7565b91505092915050565b6100fe8161011f565b82525050565b600060208201905061011960008301846100f5565b92915050565b6000819050919050565b6101328161011f565b811461013d57600080fd5b5056fea2646970667358221220677ceb871a1b582ba73525ed16401ef7fe41fcd59d4472219ab4393f134e306864736f6c63430008030033",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c806309e960081461004657806373d4a13a146100625780638ed7cd9a14610080575b600080fd5b610060600480360381019061005b91906100cc565b61009e565b005b61006a6100a8565b6040516100779190610104565b60405180910390f35b6100886100ae565b6040516100959190610104565b60405180910390f35b8060008190555050565b60005481565b60008054905090565b6000813590506100c681610129565b92915050565b6000602082840312156100de57600080fd5b60006100ec848285016100b7565b91505092915050565b6100fe8161011f565b82525050565b600060208201905061011960008301846100f5565b92915050565b6000819050919050565b6101328161011f565b811461013d57600080fd5b5056fea2646970667358221220677ceb871a1b582ba73525ed16401ef7fe41fcd59d4472219ab4393f134e306864736f6c63430008030033",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.3+commit.8d00100c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"data\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"readData\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_data\",\"type\":\"uint256\"}],\"name\":\"updateData\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/SimpleStorage.sol\":\"SimpleStorage\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/SimpleStorage.sol\":{\"keccak256\":\"0xedc28a39021002f084d8fa92492890257fcfb9dea08202e7a0264a0698f78180\",\"urls\":[\"bzz-raw://2501c010e945e8650565ad6b286f5b4198540c93aa77984099172801ae248f9b\",\"dweb:/ipfs/QmPdmkqpoqeRhzqXn88swXr8vQ75tU6FsdCJj6hVSk6P9u\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610176806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c806309e960081461004657806373d4a13a14610062578063bef55ef314610080575b600080fd5b610060600480360381019061005b91906100cc565b61009e565b005b61006a6100a8565b6040516100779190610104565b60405180910390f35b6100886100ae565b6040516100959190610104565b60405180910390f35b8060008190555050565b60005481565b60008054905090565b6000813590506100c681610129565b92915050565b6000602082840312156100de57600080fd5b60006100ec848285016100b7565b91505092915050565b6100fe8161011f565b82525050565b600060208201905061011960008301846100f5565b92915050565b6000819050919050565b6101328161011f565b811461013d57600080fd5b5056fea2646970667358221220bf2573f52dc504aa4dfdcf9221b7e5cd83e2682e7ce04f309f5ce7a33928822e64736f6c63430008030033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c806309e960081461004657806373d4a13a14610062578063bef55ef314610080575b600080fd5b610060600480360381019061005b91906100cc565b61009e565b005b61006a6100a8565b6040516100779190610104565b60405180910390f35b6100886100ae565b6040516100959190610104565b60405180910390f35b8060008190555050565b60005481565b60008054905090565b6000813590506100c681610129565b92915050565b6000602082840312156100de57600080fd5b60006100ec848285016100b7565b91505092915050565b6100fe8161011f565b82525050565b600060208201905061011960008301846100f5565b92915050565b6000819050919050565b6101328161011f565b811461013d57600080fd5b5056fea2646970667358221220bf2573f52dc504aa4dfdcf9221b7e5cd83e2682e7ce04f309f5ce7a33928822e64736f6c63430008030033",
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [
@@ -641,9 +641,9 @@
       "name": "#utility.yul"
     }
   ],
-  "sourceMap": "27:223:1:-:0;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "27:223:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;82:74;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;57:16;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;164:81;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;82:74;141:5;134:4;:12;;;;82:74;:::o;57:16::-;;;;:::o;164:81::-;208:4;232;;225:11;;164:81;:::o;7:139:2:-;;91:6;78:20;69:29;;107:33;134:5;107:33;:::i;:::-;59:87;;;;:::o;152:262::-;;260:2;248:9;239:7;235:23;231:32;228:2;;;276:1;273;266:12;228:2;319:1;344:53;389:7;380:6;369:9;365:22;344:53;:::i;:::-;334:63;;290:117;218:196;;;;:::o;420:118::-;507:24;525:5;507:24;:::i;:::-;502:3;495:37;485:53;;:::o;544:222::-;;675:2;664:9;660:18;652:26;;688:71;756:1;745:9;741:17;732:6;688:71;:::i;:::-;642:124;;;;:::o;772:77::-;;838:5;827:16;;817:32;;;:::o;855:122::-;928:24;946:5;928:24;:::i;:::-;921:5;918:35;908:2;;967:1;964;957:12;908:2;898:79;:::o",
-  "source": "pragma solidity ^0.8.0;\r\n\r\ncontract SimpleStorage {\r\n    uint public data;\r\n\r\n    function updateData(uint _data) external {\r\n        data = _data;\r\n\r\n    }\r\n\r\n    function reeadData() external view returns (uint) {\r\n        return data; \r\n    }\r\n\r\n}",
+  "sourceMap": "27:222:1:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "27:222:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;82:74;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;57:16;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;164:80;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;82:74;141:5;134:4;:12;;;;82:74;:::o;57:16::-;;;;:::o;164:80::-;207:4;231;;224:11;;164:80;:::o;7:139:2:-;;91:6;78:20;69:29;;107:33;134:5;107:33;:::i;:::-;59:87;;;;:::o;152:262::-;;260:2;248:9;239:7;235:23;231:32;228:2;;;276:1;273;266:12;228:2;319:1;344:53;389:7;380:6;369:9;365:22;344:53;:::i;:::-;334:63;;290:117;218:196;;;;:::o;420:118::-;507:24;525:5;507:24;:::i;:::-;502:3;495:37;485:53;;:::o;544:222::-;;675:2;664:9;660:18;652:26;;688:71;756:1;745:9;741:17;732:6;688:71;:::i;:::-;642:124;;;;:::o;772:77::-;;838:5;827:16;;817:32;;;:::o;855:122::-;928:24;946:5;928:24;:::i;:::-;921:5;918:35;908:2;;967:1;964;957:12;908:2;898:79;:::o",
+  "source": "pragma solidity ^0.8.0;\r\n\r\ncontract SimpleStorage {\r\n    uint public data;\r\n\r\n    function updateData(uint _data) external {\r\n        data = _data;\r\n\r\n    }\r\n\r\n    function readData() external view returns (uint) {\r\n        return data; \r\n    }\r\n\r\n}",
   "sourcePath": "C:\\Users\\Asus\\Desktop\\test2222\\test-smartcontact-font\\smart_contact\\contracts\\SimpleStorage.sol",
   "ast": {
     "absolutePath": "project:/contracts/SimpleStorage.sol",
@@ -817,7 +817,7 @@
             "body": {
               "id": 53,
               "nodeType": "Block",
-              "src": "214:31:1",
+              "src": "213:31:1",
               "statements": [
                 {
                   "expression": {
@@ -826,7 +826,7 @@
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 36,
-                    "src": "232:4:1",
+                    "src": "231:4:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -835,23 +835,23 @@
                   "functionReturnParameters": 50,
                   "id": 52,
                   "nodeType": "Return",
-                  "src": "225:11:1"
+                  "src": "224:11:1"
                 }
               ]
             },
-            "functionSelector": "8ed7cd9a",
+            "functionSelector": "bef55ef3",
             "id": 54,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
-            "name": "reeadData",
-            "nameLocation": "173:9:1",
+            "name": "readData",
+            "nameLocation": "173:8:1",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 47,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "182:2:1"
+              "src": "181:2:1"
             },
             "returnParameters": {
               "id": 50,
@@ -865,7 +865,7 @@
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 54,
-                  "src": "208:4:1",
+                  "src": "207:4:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -876,7 +876,7 @@
                     "id": 48,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "208:4:1",
+                    "src": "207:4:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -885,20 +885,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "207:6:1"
+              "src": "206:6:1"
             },
             "scope": 55,
-            "src": "164:81:1",
+            "src": "164:80:1",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
         "scope": 56,
-        "src": "27:223:1"
+        "src": "27:222:1"
       }
     ],
-    "src": "0:250:1"
+    "src": "0:249:1"
   },
   "compiler": {
     "name": "solc",
@@ -908,12 +908,12 @@
     "97": {
       "events": {},
       "links": {},
-      "address": "0xC8fe70055fc60Cbed290202b37048a2750319F63",
-      "transactionHash": "0x41e90aed745330944d5f0aac1045217101d465a5ed92dadaf253f1fadc709d92"
+      "address": "0xDb814A8423f227e7f710808465728FC7F76117F3",
+      "transactionHash": "0x01f99fe8ec00238a5468de485918f7fea7ca917b8672b40f82953e616ec729dc"
     }
   },
   "schemaVersion": "3.4.8",
-  "updatedAt": "2022-07-31T04:09:57.085Z",
+  "updatedAt": "2022-07-31T07:43:27.299Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

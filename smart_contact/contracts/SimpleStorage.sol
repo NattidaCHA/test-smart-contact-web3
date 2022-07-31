@@ -8,7 +8,7 @@ contract SimpleStorage {
 
     }
 
-    function reeadData() external view returns (uint) {
+    function readData() external view returns (uint) {
         return data; 
     }
 

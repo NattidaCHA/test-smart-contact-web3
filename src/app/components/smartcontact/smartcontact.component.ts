@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { ethers } from 'ethers';
+import { ethers, BigNumber } from 'ethers';
 import Swal from 'sweetalert2';
 import SimpleStorage from '../../../../smart_contact/build/contracts/SimpleStorage.json';
 
 @Component({
   selector: 'app-smartcontact',
   templateUrl: './smartcontact.component.html',
-  styleUrls: ['./smartcontact.component.css']
+  styleUrls: ['./smartcontact.component.css'],
 })
 export class SmartcontactComponent implements OnInit {
   balance: string = '-';
@@ -14,12 +14,12 @@ export class SmartcontactComponent implements OnInit {
   account: string = '-';
   to: string = '';
   chainId: string = '-';
+  count: string = '';
   constructor() {
     this.getAccount();
-   }
-
-  ngOnInit(): void {
   }
+
+  ngOnInit(): void {}
 
   getAccount = async () => {
     if (typeof (window as any).ethereum !== 'undefined') {
@@ -27,60 +27,84 @@ export class SmartcontactComponent implements OnInit {
       const accounts = await (window as any).ethereum.request({
         method: 'eth_requestAccounts',
       });
+
       this.account = accounts[0];
-      let provider = new ethers.providers.Web3Provider((window as any).ethereum);
+      let provider = new ethers.providers.Web3Provider(
+        (window as any).ethereum
+      );
+
+      const getTransactionCount = await (window as any).ethereum.request({
+        method: 'eth_getTransactionCount',
+        params: [accounts[0], 'latest'],
+      });
+      this.count = Number(getTransactionCount).toString();
       const signer = provider.getSigner();
       const address = await signer.getAddress();
       const currentBalance = await provider.getBalance(address);
       this.balance = ethers.utils.formatEther(currentBalance).toString();
-      const _chainId = await provider.getNetwork()
+      const _chainId = await provider.getNetwork();
       this.chainId = _chainId.chainId.toString();
-      const contract = new ethers.Contract(address,SimpleStorage.abi,signer);
-      // console.log(contract)
+      const networksId = await (window as any).ethereum.request({
+        method: 'net_version',
+      });
+
+      const contract = new ethers.Contract(
+        SimpleStorage.networks[networksId].address,
+        SimpleStorage.abi,
+        signer
+      );
     }
   };
 
   connect = async () => {
     if (this.value && this.to) {
       if (typeof (window as any).ethereum !== 'undefined') {
-        let provider = new ethers.providers.Web3Provider(
+        const provider = new ethers.providers.Web3Provider(
           (window as any).ethereum
         );
         const signer = provider.getSigner();
         const address = await signer.getAddress();
-        this.sentBusd(address);
+        let _value = this.value;
+        const input = _value.toString().trim();
+        const amount = ethers.utils.parseUnits(input, 18);
+        this.sentBusd(address, amount._hex, provider);
       }
     } else {
       alert('Pleasกรุณากรอก Address to หรือจำนวนเหรียญ');
     }
   };
 
-  sentBusd = async (address: any) => {
-    let _value = this.value;
-    let sum = parseFloat(_value) * 10000000000000;
+  sentBusd = async (address: any, amout: string, provider: any) => {
     let params = [
       {
         from: address,
         to: this.to,
-        value: sum.toString(),
-        gasPrice: '20000000000',
-        gas: '21000',
+        value: amout,
+        // gasPrice: '20000000000',
+        // gas: '21000',
       },
     ];
     const sent = await (window as any).ethereum
       .request({ method: 'eth_sendTransaction', params: params })
       .then((result: any) => {
         if (result) {
-          setTimeout(() => {
+          if (this.checkTransactionConfirm(result)) {
+            setTimeout(() => {
+              Swal.fire({
+                icon: 'success',
+                title: 'Send BUSD Success',
+              });
+              this.getAccount();
+              this.value = '';
+              this.to = '';
+            }, 17000);
+          } else {
             Swal.fire({
-              icon: 'success',
-              title: 'Send BUSD Success',
+              icon: 'error',
+              title: 'Oops...',
+              text: 'Something wrong !',
             });
-
-            this.getAccount();
-            this.value = '';
-            this.to = '';
-          }, 16000);
+          }
         }
       })
       .catch((error: any) => {
@@ -98,6 +122,18 @@ export class SmartcontactComponent implements OnInit {
             title: 'Oops...',
             text: error.message,
           });
+        }
+      });
+  };
+
+  checkTransactionConfirm = async (hax) => {
+    await (window as any).ethereum
+      .request({ method: 'eth_getTransactionReceipt', params: [hax] })
+      .then((o) => {
+        if (o != null) {
+          return true;
+        } else {
+          return false;
         }
       });
   };
