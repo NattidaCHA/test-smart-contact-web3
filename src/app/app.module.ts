@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SmartcontactComponent } from './components/smartcontact/smartcontact.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SmartcontactComponent
   ],
   imports: [
     BrowserModule,
