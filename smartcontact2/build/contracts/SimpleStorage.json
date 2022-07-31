@@ -644,7 +644,7 @@
   "sourceMap": "27:223:1:-:0;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "27:223:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;82:74;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;57:16;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;164:81;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;82:74;141:5;134:4;:12;;;;82:74;:::o;57:16::-;;;;:::o;164:81::-;208:4;232;;225:11;;164:81;:::o;7:139:2:-;;91:6;78:20;69:29;;107:33;134:5;107:33;:::i;:::-;59:87;;;;:::o;152:262::-;;260:2;248:9;239:7;235:23;231:32;228:2;;;276:1;273;266:12;228:2;319:1;344:53;389:7;380:6;369:9;365:22;344:53;:::i;:::-;334:63;;290:117;218:196;;;;:::o;420:118::-;507:24;525:5;507:24;:::i;:::-;502:3;495:37;485:53;;:::o;544:222::-;;675:2;664:9;660:18;652:26;;688:71;756:1;745:9;741:17;732:6;688:71;:::i;:::-;642:124;;;;:::o;772:77::-;;838:5;827:16;;817:32;;;:::o;855:122::-;928:24;946:5;928:24;:::i;:::-;921:5;918:35;908:2;;967:1;964;957:12;908:2;898:79;:::o",
   "source": "pragma solidity ^0.8.0;\r\n\r\ncontract SimpleStorage {\r\n    uint public data;\r\n\r\n    function updateData(uint _data) external {\r\n        data = _data;\r\n\r\n    }\r\n\r\n    function reeadData() external view returns (uint) {\r\n        return data; \r\n    }\r\n\r\n}",
-  "sourcePath": "C:\\Users\\Asus\\Desktop\\test2222\\test-smartcontact-font\\smartcontact\\contracts\\SimpleStorage.sol",
+  "sourcePath": "C:\\Users\\Asus\\Desktop\\test2222\\test-smartcontact-font\\smartcontact2\\contracts\\SimpleStorage.sol",
   "ast": {
     "absolutePath": "project:/contracts/SimpleStorage.sol",
     "exportedSymbols": {
@@ -908,12 +908,12 @@
     "97": {
       "events": {},
       "links": {},
-      "address": "0xcF1c2b20fbC6151F332Cd8241A459D388f20d071",
-      "transactionHash": "0xd71dd88702986c9ad91e7c2a7ba9fb194b7de8735ffb1084f31981de26468fe3"
+      "address": "0xac5E5A90dA464D608F396CcDC9e43710349b666a",
+      "transactionHash": "0x5629ab95bbf229611706f2b0526d418c27f738d07b63f9a40309037eeb167b84"
     }
   },
   "schemaVersion": "3.4.8",
-  "updatedAt": "2022-07-31T03:48:00.290Z",
+  "updatedAt": "2022-07-31T04:02:27.421Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
